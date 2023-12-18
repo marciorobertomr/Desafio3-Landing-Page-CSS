@@ -21,7 +21,7 @@ body * {
     background-image: url(../images/banner.png), url(../images/background-gradient.png);
     padding-top: 56px;
     padding-bottom: 75px;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .banner-content h1 {
@@ -48,11 +48,19 @@ header button {
     font-weight: 900;
     /* identical to box height */
     letter-spacing: 0.21em;
-    border: 2px solid transparent;
+    /* border: 2px solid transparent; */
     border-image: linear-gradient(180deg, #33A8DB 0%, #1472B7 100%);
     border-image-slice: 1;
     /* Tira o fundo branco do botão */
     background-color: rgba(0, 0, 0, 0);
+
+    cursor: pointer;
+
+    transition: .6s;
+}
+
+button:hover {
+    scale: 1.15;
 }
 
 header button span {
@@ -148,15 +156,6 @@ header button span {
 footer {
     padding-top: 59px;
     padding-bottom: 38px;
-
-    /* box-sizing: border-box; */
-
-    /* position: absolute; */
-    /* width: 1440px; */
-    /* height: 170px; */
-
-    /* left: 0px;
-    top: 0px; */
     background: linear-gradient(180deg, rgba(51, 168, 219, 0) 0%, rgba(51, 168, 219, 0.2) 99.99%, rgba(51, 168, 219, 0.2) 100%);
 }
 
